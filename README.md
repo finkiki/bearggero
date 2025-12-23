@@ -1,11 +1,13 @@
 bearggero
 =========
 
-Bearggero Theme for Flatpress 1.0
+Bearggero Theme for Flatpress 1.5+
 ==========
 Compatibility
 ==========
 This theme works with all major browsers that support HTML 5. IE9+, Firefox, Opera, Chrome, and also works well with mobile browsers. IFrames(YouTube, vimeo, etc) are not supported by the iPhone browser so they will not show up on an iphone.
+
+Updated to work with FlatPress 1.5 RC (master) and refreshed with a responsive layout for modern mobile devices.
 
 
 First we removed the admin link on the page because it didn’t look very nice. To access the page simply append admin.php to the URL in the navigation bar so example.com/flatpress/ would become example.com/flatpress/admin.php
@@ -63,7 +65,6 @@ We have enabled blockParser, BBcode, adminArea, categories, Jquery, locker, Quic
   
   
   
-
 
 
 
