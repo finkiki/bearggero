@@ -26,7 +26,7 @@ body {
 	padding: 0;
 	text-align:center;
 	color: black;
-	background: #f1f4f9 url(../imgs/stripe_ie.png) repeat;
+	background: #f1f4f9;
 	background-color: #eee;
 	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.2) 35px, rgba(255,255,255,.2) 70px);
 	min-height: 100vh;
@@ -341,8 +341,6 @@ h4 { font-size: 1.2em; }
 	/*Menu links */
 	nav a{
 		background: linear-gradient(to bottom, #3a6a98 0%, #2c5073 80%);
-		/** IE version of gradient. Not at all similar. But close.**/
-        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a6a98', endColorstr='#2c5073');
         border-bottom: 2px solid #3c1717;
 		display: inline-block;
 		outline: none;
@@ -355,10 +353,9 @@ h4 { font-size: 1.2em; }
 		text-shadow:0px -1px 0px #7a2a1d;
 		margin-right: 0;
 		margin-bottom: 6px;
-	}
+    }
     nav a:hover {
         background: #2c5073;
-        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c5073', endColorstr='#2c5073');
 
     }
     /* Changed to keep our button/link style */
