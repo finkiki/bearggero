@@ -23,7 +23,7 @@ Author URI: http://www.flatpress.org/
 	$theme['default_style'] = 'bearggero';
 	
 	// Other theme settings
-		// register widgetsets
+	// register widgetsets
 	register_widgetset('right');
 	register_widgetset('left');
 	register_widgetset('Menus');
