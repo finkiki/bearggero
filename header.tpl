@@ -18,7 +18,7 @@
             </div>
         <div id="menus">
             <nav>
-                {widgets pos=Menus}
+                {widgets pos=menus}
                 {$content}
                 {/widgets}
             </nav>

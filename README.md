@@ -24,7 +24,7 @@ Iframes are styled by the element so it will always fill the entry unless strict
 Statics
 ==========
 Menu
-  We use a custom widget named Menus that dynamically pull the links from this menu page. In order to use this you must   place all urls to be pulled in a blockparser:static page and create a custom widget "Menus" that contains this static   page. More info in the widgets section.
+  We use a custom widget named menus that dynamically pull the links from this menu page. In order to use this you must   place all urls to be pulled in a blockparser:static page and create a custom widget "menus" that contains this static   page. More info in the widgets section.
   
   This page is used to generate the menu at the top of the page. All that should be here is anchors so [url=?]Home[/url]   in BBcode. 
 
@@ -33,9 +33,9 @@ Menu
 ==========
 Widgets
 ==========
-We utilize sticky, and Menus custom widgets.
-Menus
-  This widget is only filled with one element and that is Blockparser:menu.
+We utilize sticky, and menus custom widgets.
+menus
+  This widget is only filled with one element and that is blockparser:menu.
   Blockparser: represents a static that can be added to the widgetset.
   The Blockparser:menu represents the menu page which must be updated for each nav anchor element meaning that each page   you want to be displayed in our home menu must be added here, it is a simple hardcoded BBcode [url] [/url] just append   a new one. These modifications must occur in the edit statics section.
 sticky
@@ -47,7 +47,7 @@ sticky
   array (
     0 => 'blockparser:about',
   ),
-  'Menus' => 
+  'menus' => 
   array (
     0 => 'blockparser:menu',
   ),
@@ -65,6 +65,5 @@ We have enabled blockParser, BBcode, adminArea, categories, Jquery, locker, Quic
   
   
   
-
 
 

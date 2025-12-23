@@ -26,7 +26,7 @@ Author URI: http://www.flatpress.org/
 	// register widgetsets
 	register_widgetset('right');
 	register_widgetset('left');
-	register_widgetset('Menus');
+	register_widgetset('menus');
 	register_widgetset('sticky');
 	
 ?>
