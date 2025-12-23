@@ -3,7 +3,6 @@
 Theme Name:Bearggero 
 Theme URI://github.com/dartarrow/bearggero
 Description:Updated Bearggero theme with responsive layout for FlatPress 1.5+
-: 
 Version: 1.2
 Author: Darren Guinness & Alvin Jude
 Author URI: http://www.flatpress.org/
