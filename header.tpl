@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset={$flatpress.charset}" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 	{action hook=wp_head}
 </head>
 
@@ -16,8 +17,8 @@
                 <p class="subtitle">{$flatpress.subtitle}</p>
             </div>
         <div id="menus">
-            {widgets pos=Menus}
             <nav>
+                {widgets pos=menus}
                 {$content}
                 {/widgets}
             </nav>

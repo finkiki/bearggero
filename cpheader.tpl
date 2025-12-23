@@ -3,6 +3,7 @@
 <head>
 	<title>{$flatpress.title}{$pagetitle}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset={$flatpress.charset}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	{action hook=wp_head}
 	{action hook=admin_head}
 </head>

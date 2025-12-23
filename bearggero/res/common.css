@@ -22,23 +22,21 @@ html {
 }
 
 body {
-    font-size: 100%;
-    padding: 0;
-    text-align:center;
-    color: black;
-    background: white url(../imgs/stripe_ie.png) repeat;
-    <!-- [if !IE]  -->
-    background:#f1f4f9;
-    background-color: #eee;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.2) 35px, rgba(255,255,255,.2) 70px) !important;
-    <!-- <![endif] -->
-    }
+	font-size: 100%;
+	padding: 0;
+	text-align:center;
+	color: black;
+	background: #f1f4f9;
+	background-color: #eee;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.2) 35px, rgba(255,255,255,.2) 70px);
+	min-height: 100vh;
+	}
 
 hr { display: none }
 
 p { margin: .5em 0 }
 
-img { border: none }
+img { border: none; max-width: 100%; height: auto }
 
 blockquote {
     width: 90%;
@@ -147,50 +145,51 @@ h4 { font-size: 1.2em; }
 
 /* ===== DIV CONTAINER ALL ELEMENTS BLOCK ===== */
 #body-container {
-    text-align: left;
-    width: 1040px !important;
-    width: 748px; /* fix for I.E. */
-    margin: 0 auto 0 auto;
-    padding: 5px;
-    min-height:100%;
-    /*border: solid 1px #ccc;*/
-    /*background-color: white*/
+	text-align: left;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 16px;
+	min-height:100%;
+	box-sizing: border-box;
+	/*border: solid 1px #ccc;*/
+	/*background-color: white*/
 }
 
 
 
 /* ===== HEAD ===== */
 #head {
-    font-family: 'rub';
-    padding: 15px 10px 15px 45px;
-    margin: 10px;
-    background: url('../imgs/bannerpic2.png') no-repeat right top;
-    /* background-color: rgb(170, 65, 65); */
-    background-color: #732c2c;
+	font-family: 'rub';
+	padding: 15px 16px;
+	margin: 10px;
+	background: url('../imgs/bannerpic2.png') no-repeat right top;
+	/* background-color: rgb(170, 65, 65); */
+	background-color: #732c2c;
 
-    border: #bbb 1px solid;
-    border-bottom: 10px #2c5073 solid;
-
- 
+	border: #bbb 1px solid;
+	border-bottom: 10px #2c5073 solid;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 12px;
 }
 
 #head a { color: white; text-decoration: none; } 
 
-    .subtitle {
-        font-size: 100%;
-        font-style: oblique;
-        color: #F1F1F1;
-        margin: .5em 0 0 0
-    }
+	.subtitle {
+		font-size: 100%;
+		font-style: oblique;
+		color: #F1F1F1;
+		margin: .5em 0 0 0
+	}
 #titles {
-    display:inline-block;
-    width:26%;
-    font-family:'Helvetica';
+	flex: 1 1 240px;
+	font-family:'Helvetica';
 }
 #menus {
-    display:inline-block;
-    width:69%;
-    vertical-align:text-bottom;
+	flex: 1 1 320px;
+	text-align:right;
 }
 
 
@@ -210,16 +209,16 @@ h4 { font-size: 1.2em; }
 #main h4 { margin: 2em 0 0 0}
 
 #main {
-    float:left;
-    position: relative;
-    width:990px !important;
-    width: 478px;
-    font-size: 20px;
-    font-family:'Archer Light';
-    color:#686868;
-    padding-left:15px;
-    padding-right:30px;
-    margin: 12px;
+	float:none;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	font-size: 20px;
+	font-family:'Archer Light';
+	color:#686868;
+	padding: 0 10px;
+	margin: 12px 0;
+	box-sizing: border-box;
 }
 
 #main p { line-height: 1.5em; margin-top: 1.2em; }
@@ -331,31 +330,32 @@ h4 { font-size: 1.2em; }
         width:100%;
         height:600px;
     }
-    /* Needed for buttons to be on the same horizontal line*/
-    nav{
-        display:inline;
-    }
-    /*Menu links */
-    nav a{
-        background: linear-gradient(to bottom, #3a6a98 0%, #2c5073 80%);
-        /** IE version of gradient. Not at all similar. But close.**/
-        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a6a98', endColorstr='#2c5073');
+	/* Needed for buttons to be on the same horizontal line*/
+	nav{
+		display:flex;
+		flex-wrap:wrap;
+		gap:8px;
+		justify-content:flex-end;
+		align-items:center;
+	}
+	/*Menu links */
+	nav a{
+		background: linear-gradient(to bottom, #3a6a98 0%, #2c5073 80%);
         border-bottom: 2px solid #3c1717;
-        display: inline-block;
-        outline: none;
-        text-align: center;
-        font: 14px Arial, Helvetica, sans-serif;
-        padding: 10px;
-        padding-top:20px;
-        min-width: 50px;
-        border-radius: 2px;
-        box-shadow: 0 1px 2px rgba(0,0,0,.2);
-        text-shadow:0px -1px 0px #7a2a1d;
-        margin-right: 5px;
+		display: inline-block;
+		outline: none;
+		text-align: center;
+		font: 14px Arial, Helvetica, sans-serif;
+		padding: 12px 14px;
+		min-width: 50px;
+		border-radius: 2px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		text-shadow:0px -1px 0px #7a2a1d;
+		margin-right: 0;
+		margin-bottom: 6px;
     }
     nav a:hover {
         background: #2c5073;
-        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c5073', endColorstr='#2c5073');
 
     }
     /* Changed to keep our button/link style */
@@ -407,22 +407,59 @@ h4 { font-size: 1.2em; }
         padding: 0 1em
     }
     
-    .navigation { /* next entries & previous entries link */
-        font-size: 80%;
-        margin-bottom: 5em
-    }
+	.navigation { /* next entries & previous entries link */
+		font-size: 80%;
+		margin-bottom: 5em
+	}
+
+@media (max-width: 900px) {
+	#head {
+		padding: 12px;
+		margin: 8px;
+	}
+	#titles, #menus {
+		text-align: center;
+	}
+	nav {
+		justify-content: center;
+	}
+	#main {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 600px) {
+	#main {
+		padding: 0 6px;
+	}
+	.entry {
+		padding: 12px 16px;
+	}
+	nav a {
+		flex: 1 1 140px;
+	}
+	#main h3,
+	#main ul.entry-footer {
+		width: 100%;
+		display: block;
+		text-align: left;
+	}
+	#footer {
+		padding: 12px 6px;
+	}
+}
 
 
 /* ===== FOOTER ===== */
 #footer {
-    clear: both;
-    font-size: 80%;
-    color: #555;
-    padding: 5px;
-    border-top: #bbb 1px solid;
-    position:fixed;
-    bottom:0px;
-    z-index:-400;
-    margin-left:30px;
-    width:960px;
+	clear: both;
+	font-size: 80%;
+	color: #555;
+	padding: 10px;
+	border-top: #bbb 1px solid;
+	position: relative;
+	margin: 20px auto 0;
+	width: 100%;
+	box-sizing: border-box;
+	text-align:center;
 }

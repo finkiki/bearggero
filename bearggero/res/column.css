@@ -48,3 +48,12 @@ Module: style.css
 #column fieldset { margin: 0 5px 0 5px }
 
 #column legend { font-size: 100% }
+
+@media (max-width: 900px) {
+	#column {
+		width: 100% !important;
+		float: none;
+		border-left: 0;
+		border-top: solid 1px #ccc;
+	}
+}
