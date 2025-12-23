@@ -28,6 +28,6 @@ Author URI: http://www.flatpress.org/
 	register_widgetset('right');
 	register_widgetset('left');
 	register_widgetset('Menus');
-	register_widgetset('sticky'); 
+	register_widgetset('sticky');
 	
 ?>
