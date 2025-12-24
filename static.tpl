@@ -1,21 +1,21 @@
 {include file=header.tpl}
 
-		<div id="main">
+		<main id="main">
 		
 		
 		{static_block}
 		{static}
-			<div id="{$id}" class="entry page-{$id}">
+			<article id="{$id}" class="entry page-{$id}">
 				<h3>{$subject}</h3>
 				
 				{$content|tag:the_content}
-			</div>
+			</article>
 		{/static}
 
 		{/static_block}
 		
 				
-		</div>
+		</main>
 		
 		{include file=widgets.tpl}
 	

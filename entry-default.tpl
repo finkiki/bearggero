@@ -1,4 +1,4 @@
-	<div id="{$id}" class="entry {$date|date_format:"y-%Y m-%m d-%d"}">
+	<article id="{$id}" class="entry {$date|date_format:"y-%Y m-%m d-%d"}">
 				{* 	using the following way to print the date, if more 	*} 
 				{*	than one entry have been written the same day,		*} 
 				{*	 the date will be printed only once 				*}
@@ -14,7 +14,7 @@
 			    <!--- this is not actually a footer just didnt want to change the css formatting -->
 				<li class="entry-info"> 
 				{$date|date_format:"%b %d, %Y"}
-				{if ($categories)} in {$categories|@filed}{/if}
+				{if ($categories)} in {foreach from=$categories item=cat name=catloop}{$cat}{if !$smarty.foreach.catloop.last}, {/if}{/foreach}{/if}
 				</li> 
 				</ul>
 			   </div>
@@ -28,5 +28,5 @@
             {/if}
                  {if isset($views)}(<strong>{$views}</strong> views){/if}
 				
-	</div>
+	</article>
 	
