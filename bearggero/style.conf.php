@@ -1,20 +1,20 @@
 <?php
 /*  
 Style Name: Bearggero
-Style URI: https://github.com/dartarrow/bearggero   
-Description: A new theme focused on contextual separation, readability and a nice colour pallete. Also works well on mobile devices.
-Version: 1.0
-Author: Darreng & Dartarrow
+Style URI: https://github.com/finkiki/bearggero   
+Description: A responsive theme focused on contextual separation, readability and a nice color palette. Modernized for FlatPress 1.5 RC+.
+Version: 1.5.0
+Author: Darren Guinness & Alvin Jude
 */
 
 
 
 	
 	$style['name'] = 'Bearggero';
-	$style['author'] = 'Darreng & dartarrow';
-	$style['www'] = 'https://github.com/dartarrow/bearggero';
+	$style['author'] = 'Darren Guinness & Alvin Jude';
+	$style['www'] = 'https://github.com/finkiki/bearggero';
 	
-	$style['version'] = 1.0;
+	$style['version'] = '1.5.0';
 		
 	$style['style_def'] = 'style.css';
 	$style['style_admin'] = 'admin.css';
