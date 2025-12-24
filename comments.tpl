@@ -8,7 +8,7 @@
 		{comment_block}
 		<ol id="comments">
 		{comment}
-			<li id="{$id}" {$loggedin|notempty:"class=\"comment-admin\""}>
+			<li id="{$id}" {if $loggedin}class="comment-admin"{/if}>
 			<div id="commentHeader">	
                 <div class='commentName'>
 				<strong class='comment-name'>
@@ -21,7 +21,7 @@
 					else default fallback on displaying plain $name"
 					
 				*}
-				{$url|notempty:"<a href=\"$url\" title=\"Permalink to $name's comment\">$name</a>"|default:$name}
+				{if $url}<a href="{$url}" title="Permalink to {$name}'s comment">{$name}</a>{else}{$name}{/if}
 				</strong>
 				</div>
 				

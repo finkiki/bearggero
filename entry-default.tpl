@@ -14,7 +14,7 @@
 			    <!--- this is not actually a footer just didnt want to change the css formatting -->
 				<li class="entry-info"> 
 				{$date|date_format:"%b %d, %Y"}
-				{if ($categories)} in {$categories|@filed}{/if}
+				{if ($categories)} in {foreach from=$categories item=cat name=catloop}{$cat}{if !$smarty.foreach.catloop.last}, {/if}{/foreach}{/if}
 				</li> 
 				</ul>
 			   </div>
