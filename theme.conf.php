@@ -22,15 +22,8 @@ Author URI: http://www.flatpress.org/
 	$theme['style_admin'] = 'admin.css';
 	
 	$theme['default_style'] = 'bearggero';
-
-
-	$theme['default_style'] = 'bearggero';
 	
 	// Other theme settings
-		// overrides default tabmenu
-		// and panel layout
-	remove_filter('admin_head', 'admin_head_action');
-	
 		// register widgetsets
 	register_widgetset('right');
 	register_widgetset('left'); 

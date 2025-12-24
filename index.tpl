@@ -1,24 +1,14 @@
 {include file=header.tpl}
 
 		<div id="main">
-{php}if (!isset($_GET["x"])) {      
-{/php}
+	{if !$smarty.get.x}
 	{widgets pos=sticky}
         <div id="sticky-{counter}" class="sticky entry">
                 <h3>{$subject}</h3>
                         {$content}
                             </div>
                             {/widgets}
-         {php}
-         }
-         {/php}
-        
-	{widgets pos=Menus}
-        <div id="sticky-{counter}" class="sticky entry">
-                <h3>{$subject}</h3>
-                        {$content}
-                            </div>
-                            {/widgets}
+	{/if}
 
 		{entry_block}
 		
