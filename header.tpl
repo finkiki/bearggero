@@ -11,7 +11,7 @@
 
 <body>
     <div id="body-container">
-        <div id="head">
+        <header id="head">
             <div id="titles">
                 <h1><a href="{$smarty.const.BLOG_BASEURL}">{$flatpress.title}</a></h1>
                 <p class="subtitle">{$flatpress.subtitle}</p>
@@ -23,6 +23,6 @@
                 {/widgets}
             </nav>
         </div>
-    </div> <!-- end of #head -->
+    </header> <!-- end of #head -->
         
 	<div id="outer-container">

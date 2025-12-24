@@ -1,6 +1,6 @@
 {include file=header.tpl}
 
-		<div id="main">
+		<main id="main">
 	{if !$smarty.get.x}
 	{widgets pos=sticky}
         <div id="sticky-{counter}" class="sticky entry">
@@ -22,7 +22,7 @@
 			
 		{/entry_block}
 
-		</div>
+		</main>
 			
 
 		{include file=widgets.tpl}

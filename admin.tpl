@@ -1,6 +1,6 @@
 {include file=cpheader.tpl}
 
-		<div id="cpmain">
+		<main id="cpmain">
 			
 
 		<div class="entry">
@@ -16,7 +16,7 @@
 		{/page}
 		</div>
 		
-		</div>
+		</main>
 	
 {include file=footer.tpl}
 

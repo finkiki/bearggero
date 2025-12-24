@@ -1,6 +1,7 @@
 {include file=header.tpl}
 
-		<div id="main">
+		<main id="main">
+
 		{entry_block}
 		{entry}
 			{include file=entry-default.tpl}
@@ -51,7 +52,7 @@
 		{include file="shared:comment-form.tpl"}
 
 	
-		</div>
+		</main>
 		
 		{include file=widgets.tpl}
 	

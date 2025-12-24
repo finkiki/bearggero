@@ -1,7 +1,7 @@
 		</div>
 		
 		
-		<div id="footer">
+		<footer id="footer">
 			{action hook=wp_footer}
 			
 			<!--
@@ -20,7 +20,7 @@
 			<p>
 			This blog is powered by <a href="http://www.flatpress.org/">FlatPress</a>.
 			</p>
-		</div> <!-- end of #footer -->
+		</footer> <!-- end of #footer -->
 
 	</div>
 </body>

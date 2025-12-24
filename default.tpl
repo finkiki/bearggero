@@ -1,6 +1,6 @@
 {include file=header.tpl}
 	
-			<div id="main">
+			<main id="main">
 				
 
 			<div class="entry">
@@ -13,7 +13,7 @@
 				</div>
 			</div>
 			
-			</div>
+			</main>
 			
 			{include file=widgets.tpl}
 			
