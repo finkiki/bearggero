@@ -19,8 +19,8 @@
             {widgets pos=Menus}
             <nav>
                 {$content}
-                {/widgets}
             </nav>
+            {/widgets}
         </div>
     </div> <!-- end of #head -->
         

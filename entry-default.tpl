@@ -18,7 +18,7 @@
 				</li> 
 				</ul>
 			   </div>
-                {include file=shared:entryadminctrls.tpl}
+                {include file="shared:entryadminctrls.tpl"}
 				
 				
 				{$content|tag:the_content}
