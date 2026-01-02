@@ -12,13 +12,6 @@
          {php}
          }
          {/php}
-        
-	{widgets pos=Menus}
-        <div id="sticky-{counter}" class="sticky entry">
-                <h3>{$subject}</h3>
-                        {$content}
-                            </div>
-                            {/widgets}
 
 		{entry_block}
 		

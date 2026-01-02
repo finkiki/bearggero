@@ -268,6 +268,17 @@ h4 { font-size: 1.2em; }
         border: solid 1px #ccc;
         background-color: white
     }
+    
+    /* Sticky About block for homepage */
+    .sticky.entry {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+        z-index: 10;
+        background-color: #f9f9f9;
+        border: solid 2px #4176aa;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
     #comments 
     {
         margin: 0 0 1.5em 0;
