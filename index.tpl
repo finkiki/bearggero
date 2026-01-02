@@ -6,8 +6,8 @@
         <div id="sticky-{counter}" class="sticky entry">
                 <h3>{$subject}</h3>
                         {$content}
-                            </div>
-                            {/widgets}
+        </div>
+        {/widgets}
 {/if}
 
 		{entry_block}
